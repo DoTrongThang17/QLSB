@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { STUDENT } from 'src/student.entity';
 import { DataSource } from 'typeorm';
-import { TOPICS } from './topics.entity';
+import { TOPICS } from '../topics.entity';
 
 export const databaseProviders = [
   {
@@ -19,7 +19,7 @@ export const databaseProviders = [
         synchronize: true,
         ssl: {
           ca: fs
-            .readFileSync(path.join(__dirname, '..', 'assets', 'ca.pem'))
+            .readFileSync('/workspaces/nestNode/server/assets/ca.pem')
             .toString(),
         },
       });
