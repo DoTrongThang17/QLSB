@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { STUDENT } from 'src/student.entity';
 import { DataSource } from 'typeorm';
+import { TOPICS } from './topics.entity';
 
 export const databaseProviders = [
   {
@@ -14,7 +15,7 @@ export const databaseProviders = [
         username: 'avnadmin',
         password: 'AVNS_mftPAP8cG5l0Ih_cfL2',
         database: 'STUDENTSREG',
-        entities: [STUDENT],
+        entities: [STUDENT, TOPICS],
         synchronize: true,
         ssl: {
           ca: fs
