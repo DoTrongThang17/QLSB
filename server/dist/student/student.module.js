@@ -6,20 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TopicsModule = void 0;
+exports.StudentModule = void 0;
 const common_1 = require("@nestjs/common");
-const database_module_1 = require("./database/database.module");
-const topics_controller_1 = require("./topics.controller");
-const topics_service_1 = require("./topics.service");
-const topics_provider_1 = require("./topics.provider");
-let TopicsModule = class TopicsModule {
+const student_controller_1 = require("./student.controller");
+const student_service_1 = require("./student.service");
+const database_module_1 = require("../database/database.module");
+const student_provider_1 = require("./student.provider");
+let StudentModule = class StudentModule {
 };
-exports.TopicsModule = TopicsModule;
-exports.TopicsModule = TopicsModule = __decorate([
+exports.StudentModule = StudentModule;
+exports.StudentModule = StudentModule = __decorate([
     (0, common_1.Module)({
         imports: [database_module_1.DatabaseModule],
-        controllers: [topics_controller_1.TopicsController],
-        providers: [...topics_provider_1.topicsProviders, topics_service_1.TopicsService],
+        controllers: [student_controller_1.StudentController],
+        providers: [...student_provider_1.studentProviders, student_service_1.StudentService],
     })
-], TopicsModule);
-//# sourceMappingURL=topics.module.js.map
+], StudentModule);
+//# sourceMappingURL=student.module.js.map

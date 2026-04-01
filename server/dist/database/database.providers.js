@@ -35,9 +35,9 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.databaseProviders = void 0;
 const fs = __importStar(require("fs"));
-const student_entity_1 = require("../student.entity");
+const student_entity_1 = require("../student/student.entity");
 const typeorm_1 = require("typeorm");
-const topics_entity_1 = require("../topics.entity");
+const topics_entity_1 = require("../topics/topics.entity");
 exports.databaseProviders = [
     {
         provide: 'DATA_SOURCE',

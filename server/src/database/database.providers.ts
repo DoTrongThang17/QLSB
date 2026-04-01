@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { STUDENT } from 'src/student.entity';
+import { STUDENT } from 'src/student/student.entity';
 import { DataSource } from 'typeorm';
-import { TOPICS } from '../topics.entity';
+import { TOPICS } from '../topics/topics.entity';
 
 export const databaseProviders = [
   {
