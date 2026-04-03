@@ -4,11 +4,7 @@ import { TopicsService } from './topics/topics.service';
 
 @Controller()
 export class AppController {
-  constructor(
-    private readonly appService: AppService,
-   // private readonly topicsService: TopicsService,
-  ) {}
-
+  constructor(private readonly appService: AppService) {}
   @Get()
   getHello(): string {
     return this.appService.getHello();
