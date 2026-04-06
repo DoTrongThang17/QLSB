@@ -44,10 +44,7 @@ function App() {
         <div>{data.id}</div>
         <div>{data.active ? 'Active' : 'Inactive'}</div>
       </div>
-     
-     
     </div>
   );
 }
-
 export default App;
