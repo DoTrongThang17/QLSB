@@ -10,3 +10,9 @@
     Serves job data via a RESTful API
     Handles authentication and authorization
     Communicates with the database to store or fetch user and job data
+
+    install cors
+
+    # cors enable
+
+    https://docs.nestjs.com/security/cors
