@@ -20,6 +20,13 @@ let StudentController = class StudentController {
     getHello() {
         return this.studentService.findAll();
     }
+    getData() {
+        return {
+            id: 1,
+            name: 'John Doe',
+            active: true,
+        };
+    }
 };
 exports.StudentController = StudentController;
 __decorate([
@@ -28,6 +35,12 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], StudentController.prototype, "getHello", null);
+__decorate([
+    (0, common_1.Get)('/data'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], StudentController.prototype, "getData", null);
 exports.StudentController = StudentController = __decorate([
     (0, common_1.Controller)(),
     __metadata("design:paramtypes", [student_service_1.StudentService])

@@ -10,4 +10,12 @@ export class StudentController {
     //return this.studentService.getStudent();
     return this.studentService.findAll();
   }
+  @Get('/data')
+  getData() {
+    return {
+      id: 1,
+      name: 'John Doe',
+      active: true,
+    };
+  }
 }
